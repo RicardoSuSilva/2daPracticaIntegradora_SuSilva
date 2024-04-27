@@ -9,6 +9,7 @@ export const generateToken = (user) => {
         3°: Tiempo de expiracion
     */
    const token = jwt.sign({ user }, "coderhouse", { expiresIn: '12h'})
+                                    /*,varenv.jwt_secret,*/
    return token
 }
 
